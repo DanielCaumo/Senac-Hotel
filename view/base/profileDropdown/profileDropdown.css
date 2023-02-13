@@ -1,0 +1,97 @@
+.perfil-id {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    margin-right: 20px;
+    background-color: var(--bege-escuro);
+    height: 45px;
+}
+
+.perfil-id:hover {
+    background: rgba( 147, 144, 129, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.display-picture {
+    margin-left: auto;
+}
+
+.display-picture img {
+    width: 50px;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+
+.display-picture img:hover {
+  border:2px solid #E78341;
+  padding: 1rem, 0;
+}
+
+.perfil-nome {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    color: var(--cor-texto-escuro);
+    padding: 20px 0 20px 20px;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.card {
+    position: fixed;
+    transition: 0.5s ease;
+}
+
+.card ul {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    background: #f7f6f4;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    margin-right: 20px;
+    padding: 10px px 10px 10px;
+    width: 270px;
+}
+
+.card ul li {
+    width: 100%;
+    padding: 10px;
+    color: var(--cor-texto-escuro);
+    font-size: 1rem;
+}
+
+li a {
+    color: var(--cor-texto-escuro);
+}
+
+li:hover {
+    background: rgba( 147, 144, 129, 0.45 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+li:hover a {
+    color: var(--marrom-escuro);
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    color: var(--bege-clarissimo);
+    text-decoration: none;
+}
+
+.labels {
+    display: block;
+    padding: 5px 0;
+}
+

@@ -1,0 +1,52 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0px;
+    width: 100%;
+}
+
+
+footer .basicos {
+    padding: 1rem;
+    background-color: var(--marrom-medio);
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.endereco, .contato {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sociais {
+    display: flex;
+    align-items: center;
+}
+
+.sociais a .icone {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.sociais a .hover {
+    color: var(--marrom-claro);
+}
+
+.endereco span, .contato span {
+    padding: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+    .endereco, .contato {
+        flex-direction: row;
+    }
+
+    .endereco span, .contato span {
+        padding: 0 1rem;
+    }
+}

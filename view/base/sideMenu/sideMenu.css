@@ -1,0 +1,135 @@
+
+/* Start Nav Style */
+
+#menu-burger
+{
+	position: relative;
+	z-index: 100;
+	margin:1rem 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: var(--marrom-claro);
+    color: white;
+}
+
+.nav
+{
+	position: fixed;
+	left: -100%;
+	top: 0;
+	min-height: 100%;
+	max-height: 100%;
+	min-width: 300px;
+	background: black;
+	z-index:99;
+	
+}
+.nav.nav-open
+{
+	left: 0;
+	transition: left .35s  ease-in-out;
+}
+.nav.nav-closed
+{
+	left: -100;
+	transition: left .35s  ease-in-out;
+}
+.nav .nav-container
+{
+	display: flex;
+	flex-direction: column;
+	padding: 0 2.5rem;
+	position: absolute;
+	height: 100%;
+	transition: 1s ;
+
+}
+.nav .nav-container .menu
+{
+	flex-grow: 1;
+	padding: 6rem 0 1rem 0;
+}
+.nav .menu ul
+{
+	list-style: none;
+	padding: 0;
+}
+.nav .menu ul li
+{
+	display: block;
+}
+.nav .menu ul li a 
+{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 10px;
+	font-size: 1.05rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: .5rem 0;
+	transition: .25s ease-in-out;
+	border-bottom: 1px solid transparent;
+}
+.nav .menu ul li a.active
+{
+	border-bottom: 1px solid;
+}
+.nav .menu ul li a:hover
+{
+	color: #999;
+}
+.nav .about
+{
+	color: #FFf;
+	padding: 1rem 0;
+}
+.nav .about .logo
+{
+	filter: invert(100%);
+	width: 25px;
+	margin-left: -3px;
+	margin-bottom: 15px;
+}
+.nav .about .empresa-nome
+{
+	font-size: .9rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.nav .about span
+{
+	display: block;
+}
+.nav .about a
+{
+	display: inline-block;
+}
+.nav .about a,
+.nav .about span
+{
+	font-size: .9rem;
+	color: #FFF;
+	text-decoration: none;
+	margin-bottom: 5px;
+	transition: all .25s ease-in-out;
+}
+.nav .about a:hover
+{
+	color: #ccc;
+}
+/* End Nav Style */
+
+/* Start Mobile & Tablets Responsive */
+@media screen and (max-width: 768px)
+{
+	.nav
+	{
+		width: 100%;
+	}
+}
+/* End Mobile & Tablets Responsive */

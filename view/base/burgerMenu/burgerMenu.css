@@ -1,0 +1,50 @@
+.burger-menu {
+    display: flex;
+    flex-direction: row;
+}
+.burger-menu li {
+    list-style-type: none;
+    padding: 10px;
+}
+.burger-menu li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.burger-checkbox[type="checkbox"] {
+  display: none;
+}
+
+
+@media screen and (max-width: 640px) {
+  .burger-menu {
+    flex-direction: column;
+  }
+  
+  /* Gestion de l'affichage du menu */
+  .burger-checkbox[type="checkbox"]:not(:checked) ~ ul {
+    display: none;
+  }
+  .burger-checkbox[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+  
+  /* Gestion de la checkbox */
+  .burger-checkbox[type="checkbox"] + label:before {
+    font-family: FontAwesome;
+    font-size: 30px;
+  }
+
+  .burger-checkbox[type="checkbox"] + label:before {
+    content: "\f0c9";
+  }
+
+  .burger-checkbox[type="checkbox"]:not(:checked) + label:before {
+    content: "\f0c9";
+  }
+
+  .burger-checkbox[type="checkbox"]:checked + label:before {
+    content: "\f00d";
+  }
+
+}

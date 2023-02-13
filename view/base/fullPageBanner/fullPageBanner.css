@@ -1,0 +1,16 @@
+.fullPageBanner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../imgs/salao2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: right;
+    background-size: cover;
+}
+
+@media (max-width: 728px) {
+    .fullPageBanner {
+        background-position: -1000px;
+    }
+}
+
